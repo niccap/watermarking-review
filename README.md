@@ -135,7 +135,7 @@ The `data_extraction/` directory contains the canonical study index and structur
 - [`4_resources.csv`](data_extraction/4_resources.csv): datasets and benchmarks (`R01`–`R22`), including language coverage, available artifacts, scale, and type.
 - [`5_resource_usage.csv`](data_extraction/5_resource_usage.csv): many-to-many links between resources and methods, with use roles, languages, splits, and notes.
 - [`6_quality_evaluation.csv`](data_extraction/6_quality_evaluation.csv): method-level evaluation evidence for detectability, functional preservation, robustness, imperceptibility, efficiency, and capacity.
-- [`7_robustness_protocols.csv`](data_extraction/7_robustness_protocols.csv): deduplicated catalog of attack and robustness protocols (`RP01`–`RP15`).
+- [`7_robustness_protocols.csv`](data_extraction/7_robustness_protocols.csv): deduplicated catalog of attack and robustness protocols (`RP01`–`RP13`).
 - [`8_robustness_protocol_application.csv`](data_extraction/8_robustness_protocol_application.csv): method-specific applications of those protocols, including intensity, tools or models, attacker knowledge, and post-attack outcomes.
 
 Stable identifiers connect studies, methods, resources, protocols, and experiments across the repository. `study_id`, `method_id`, `resource_id`, and `protocol_id` are the main cross-file keys; identifiers prefixed with `U`, `QE`, `RPA`, and `QA` denote resource uses, quality-evaluation summaries, protocol applications, and quality assessments.

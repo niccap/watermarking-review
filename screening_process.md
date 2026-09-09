@@ -1,6 +1,6 @@
 # Screening Process
 
-This document traces the records from the merged search results in `screening_process/2_merged.csv` to the final primary-study corpus in `screening_process/6_full_text_screening_included.csv`.
+This document traces the records from the merged search results in [`screening_process/2_merged.csv`](screening_process/2_merged.csv) to the final primary-study corpus in [`screening_process/6_full_text_screening_included.csv`](screening_process/6_full_text_screening_included.csv).
 
 The authors manually performed deduplication, title screening, and abstract screening with support from Claude Sonnet 5 (Anthropic). For each stage, they documented the eligibility criteria and decision rules, and the assistant applied them record by record to the relevant titles or abstracts under the authors' review. The authors resolved every ambiguous or borderline case and made all final decisions.
 
@@ -8,8 +8,8 @@ The authors conducted the full-text stage entirely manually, reading every candi
 
 ## Deduplication
 
-**Input:** `2_merged.csv` (1,146 records from seven source-specific searches)  
-**Output:** `3_deduplicated.csv` (766 records)
+**Input:** [`2_merged.csv`](screening_process/2_merged.csv) (1,146 records from seven source-specific searches)  
+**Output:** [`3_deduplicated.csv`](screening_process/3_deduplicated.csv) (766 records)
 
 The same paper often appeared in several databases or more than once in a single database. Google Scholar, in particular, sometimes truncated titles and author lists with “…”. Two records were treated as the same paper when:
 
@@ -22,8 +22,8 @@ This stage reduced 1,146 records to 766 distinct papers.
 
 ## Title screening
 
-**Input:** `3_deduplicated.csv` (766 records), screened by title only  
-**Output:** `4_title_screening_included.csv` (143 records) and `4_title_screening_excluded.csv` (623 records, each with a `reason_for_exclusion`)
+**Input:** [`3_deduplicated.csv`](screening_process/3_deduplicated.csv) (766 records), screened by title only  
+**Output:** [`4_title_screening_included.csv`](screening_process/4_title_screening_included.csv) (143 records) and [`4_title_screening_excluded.csv`](screening_process/4_title_screening_excluded.csv) (623 records, each with a `reason_for_exclusion`)
 
 Title screening was the broadest and most permissive filter. A record was excluded only when its title made the mismatch with the review scope unambiguous; uncertain cases proceeded to abstract screening. Exclusion reasons were:
 
@@ -36,8 +36,8 @@ Two questions were deliberately deferred because titles rarely answer them relia
 
 ## Abstract screening
 
-**Input:** `4_title_screening_included.csv` (143 records). Google Scholar abstracts truncated with “…” were first completed manually from the original arXiv or publisher source.  
-**Output:** `5_abstract_screening_included.csv` (31 records) and `5_abstract_screening_excluded.csv` (112 records, each with a `reason_for_exclusion`)
+**Input:** [`4_title_screening_included.csv`](screening_process/4_title_screening_included.csv) (143 records). Google Scholar abstracts truncated with “…” were first completed manually from the original arXiv or publisher source.  
+**Output:** [`5_abstract_screening_included.csv`](screening_process/5_abstract_screening_included.csv) (31 records) and [`5_abstract_screening_excluded.csv`](screening_process/5_abstract_screening_excluded.csv) (112 records, each with a `reason_for_exclusion`)
 
 Each title and complete abstract was assessed in this order:
 
@@ -50,8 +50,8 @@ Most records retained at title stage because of ambiguous model, dataset, or API
 
 ## Full-text screening
 
-**Input:** `5_abstract_screening_included.csv` (31 records) and the corresponding PDFs archived under `local/` as private, unreleased working material  
-**Output:** `6_full_text_screening_included.csv` (21 records, each with an `inclusion_reason` and qualitative `evaluation`) and `6_full_text_screening_excluded.csv` (10 records, each with an `exclusion_reason`)
+**Input:** [`5_abstract_screening_included.csv`](screening_process/5_abstract_screening_included.csv) (31 records) and the corresponding PDFs archived under `local/` as private, unreleased working material  
+**Output:** [`6_full_text_screening_included.csv`](screening_process/6_full_text_screening_included.csv) (21 records, each with an `inclusion_reason` and qualitative `evaluation`) and [`6_full_text_screening_excluded.csv`](screening_process/6_full_text_screening_excluded.csv) (10 records, each with an `exclusion_reason`)
 
 The authors read every paper in full to assess three issues that could not always be resolved from the abstract:
 

@@ -44,10 +44,14 @@ Bibliographic databases change over time and may require subscriptions or intera
 │   ├── 6_quality_evaluation.csv
 │   ├── 7_robustness_protocols.csv
 │   └── 8_robustness_protocol_application.csv
-└── analysis/                       # planned
-    ├── derived_counts.csv
-    ├── table_data/
-    └── figure_data/
+└── analysis/
+    ├── 1_search_results.csv
+    ├── 2_primary_studies.csv
+    ├── 3_method_classification.csv
+    ├── 4_evaluation_resources.csv
+    ├── 5_evaluation_practices.csv
+    ├── 6_quantitative_results.csv
+    └── 7_attack_protocols.csv
 ```
 
 ## Search documentation
@@ -146,13 +150,16 @@ Each `source_location` has been reconciled with the archived PDF and cites its f
 
 The robustness files separate taxonomy from application. [`7_robustness_protocols.csv`](data_extraction/7_robustness_protocols.csv) defines each protocol once; [`8_robustness_protocol_application.csv`](data_extraction/8_robustness_protocol_application.csv) records how each method applies it and which outcomes are measured again after the attack. A method tested against several protocols therefore has one application row per protocol.
 
-## Planned artifacts
+## Analysis
 
-The planned `analysis/` directory will contain only outputs derived from the frozen screening and extraction data, including:
+The `analysis/` directory contains the CSV files used directly to produce the tables in the review. Each file provides the selected and formatted data for one table, while the more detailed supporting evidence remains in `data_extraction/`. Numeric prefixes follow the tables' order of appearance:
 
-- aggregate counts reported in the article;
-- table-ready evidence summaries;
-- figure-ready data for the selection flow, publication timeline, design-space overview, and resource and language coverage;
-- scripts or commands needed to regenerate these artifacts.
+- [`1_search_results.csv`](analysis/1_search_results.csv): search scope and result count for each scholarly source, plus the total number of records before deduplication.
+- [`2_primary_studies.csv`](analysis/2_primary_studies.csv): the final 21 primary studies, with their method label, publication title, and publication type.
+- [`3_method_classification.csv`](analysis/3_method_classification.csv): each method's embedding mechanism, key design principle, embedding stage, and payload type.
+- [`4_evaluation_resources.csv`](analysis/4_evaluation_resources.csv): datasets and benchmarks grouped by category, including language coverage, artifact availability, scale, and use across the reviewed methods.
+- [`5_evaluation_practices.csv`](analysis/5_evaluation_practices.csv): study coverage and reported measures for detectability, functional preservation, imperceptibility, robustness, efficiency, and capacity.
+- [`6_quantitative_results.csv`](analysis/6_quantitative_results.csv): representative results for those six evaluation dimensions, organized by method.
+- [`7_attack_protocols.csv`](analysis/7_attack_protocols.csv): transformations and attacks used in robustness evaluations, with their coverage and method-specific operationalization.
 
-Where practical, each article table and figure will be linked to its source file and generation command.
+These CSVs are the direct data sources for the review tables. They provide concise, publication-ready summaries of the canonical evidence in `data_extraction/` and may be updated as the article is revised.

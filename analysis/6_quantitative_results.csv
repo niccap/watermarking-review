@@ -1,0 +1,22 @@
+method,detectability,functional_preservation,robustness,imperceptibility,efficiency,capacity
+SWEET,AUROC .815-.943; TPR .384-.835 at FPR <.05,Pass@1 18.8-33.8 vs. 26.3-37.8 without watermark,Renaming and refactoring reduce AUROC; post-attack functionality NR,NR,NR,N/A
+CodeIP,Exact recovery .86-1.00,ΔCodeBLEU -10.31 to +1.11 (proxy),Recovery .51-.96 after 50% cropping; functionality NR,NR,NR,Up to 20 bits/message
+ACW (Guo),AUROC .844/.812; TPR .451/.442 at 5% FPR,Pass@1 .640/.413 vs. .654/.434,"AUROC .591 after DIPPER, .728 after renaming; functionality NR",NR,NR,N/A
+DTW,AUROC .952/.885/.826,HumanEval Pass@1 loss <1.5% at AUROC .952,AUROC decreases under graded renaming; functionality NR,NR,NR,N/A
+EAW,AUROC .962/.926; TPR .677/.671 at 1% FPR,Pass@1 .378/.372,Modified code NR,NR,NR,N/A
+STONE,AUROC .982/.777,Pass@1 .571/.587,AUROC .664/.600 after refactoring/paraphrasing; functionality NR,Relative-perplexity .978-.990,"Insertion 1,277-3,266 s; detection 4.62-13.27 s/dataset",N/A
+MCGMark,Exact recovery 97.8% among 361 embedded cases,CodeBLEU .27 (proxy),"1,147/1,200 recoveries across eight attacks; functionality NR","Human identification 47.8% (10 developers, 1,000 responses)",E/D 99.12/4.36 s; 7.37x generation time,24-bit user ID
+Code Acrostic,AUROC .772,Pass@1 .512 vs. .531,TPR .348 without comments; functionality NR,NR,NR,N/A
+CodeTracer,AUROC .830; TPR .463 at 5% FPR,Pass@1 .608,"AUROC .584 after DIPPER, .734 after renaming; functionality NR",NR,118M parameters; <0.5 GB; <100 us serial delay,N/A
+GDW,AUTC .743-.951 jointly summarizes F1 and Pass@1,Functionality incorporated into AUTC,AUTC .847 -> .819 after renaming; Pass@1 recomputed,NR,"Parsing overhead discussed, not quantified",N/A
+ASLang,AUROC .948-.966; TPR .817-.884 at 1% FPR across three decoding modes,Executability and mean unit-test pass fraction combined in a graphical quality-retention analysis,TPR .817 clean; .798 after formatting; .746 after renaming; .803 after comment removal; .684 after mixed normalization; post-attack functionality NR,NR,Compile time +4.8%; decode latency +5.3-7.2%; peak memory +2.1%,N/A
+CodeMark,BitAcc 93.88-94.75%; message accuracy 87.25-90.80%,Syntax 100%; CodeBLEU 87.05-90.42 (proxies),BitAcc 74.51% after 50% Java-variable renaming; execution unavailable,CodeBLEU 87.05-90.42; ratings by four programmers,E/D .05-.09/.06-.07 s after preload,2-6 bits/function (4 default)
+ACW (Li),TPR 94.51-100%; FPR 0-.17%,Pass-rate loss 0-1.70 points; Tests4Py unchanged,"Adaptive attack: TPR 97.94 -> 71.56%, Pass 70.21 -> 63.74%",CodeBERTScore/CodeBLEU composite 93.73-96.51,.02-.09 s/function; .79-.83 s/project,N/A
+SrcMarker,BitAcc 91.97-98.21%; message accuracy 81.85-94.95%,MBXP Pass 97.64-97.99%; syntax 100%,Adaptive removal: BitAcc 70.13-73.33%; Pass 5.34-8.03%,MRR loss .03; CodeBLEU >.69,E/D 8.3-20.1/1.2-8.3 ms after preload,2-8 bits/function (4 default)
+DWC,BitAcc >94.36%; message accuracy >71.30%,Compilation/test failures .35/.66%,Adaptive removal approaches chance BitAcc; execution falls to 0-2.14%,Ratings by four programmers on 664 functions,E/D approximately 30/18 ms,4/6/8 bits/function
+MATRIX,"TPR 96.95-100%, FPR 0-3.05%; message accuracy 100%",Pass-rate loss 0-.14 points,TPR 92-100% after renaming/refactoring/formatting; 51.05-53.85% after GPT-4o rewriting,Mean/max JSD .0479/.1704; Hamming similarity .3-.8,.206 s insertion; detection NR,2 message bits (4-bit BCH); 4 message bits (7-bit BCH)
+MCSS,Exact identifier recovery 100%; zero errors on two negative sets,AST validity 100% (proxy),Eight-renaming recovery 1.6-100.0%; LLM-rewrite survival 0-32.8%; functionality NR,NR,E/D 65-145/28-50 ms on CPU,24-bit ID/file (32/40/56-bit codewords)
+RoSeMary,AUROC .97; TPR .98-.99; FPR .05-.06,Conditional unit-test Pass 95.12-97.64%,"AUROC >.93 after 50% renaming, .73 after LLM refactoring; functionality NR",NR,.027 s insertion; ZK proof 7.154 s; verification 118.6 ms,4-bit signature
+CLASP,BitAcc 97.85-99.72%,MBXP Pass 99.31-99.87%,GPT-4o rewrite: BitAcc 76.93-83.48%; Pass 99.17-99.87%,MRR and CodeBLEU in its fine-tuned retrieval setting,E/D 3.33/1.33 s; LLM calls required,2-32 bits/function (4 default)
+SWaRL,AUROC .705-.908,"Pass@1 .524-.662, matching/exceeding SFT baseline",LLM refactoring: AUROC .684-.884; functionality NR,NR,Generation .039 s/token; detection .0002 s/token,N/A
+PromptMark,AUROC .930-.994; TPR .640-.967 at 1% FPR,Pass 88.90-96.79%,"AUROC .983 -> .946 without comments, .714 after paraphrasing; functionality NR",Naturalness not measured,1.83-2.50 feedback iterations; token cost reported,N/A

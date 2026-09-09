@@ -1,0 +1,22 @@
+study,method,title,publication_type
+Choi et al. (2026),MCSS,Multi-Channel Spread-Spectrum Code Watermarking,Preprint
+Fahad et al. (2026),PromptMark,PromptMark: A Prompt-Guided Iterative-Feedback Framework for Source Code Watermarking,Conference paper
+Guan et al. (2024),CodeIP,CodeIP: A Grammar-Guided Multi-Bit Watermark for Large Language Models of Code,Conference paper
+Guo and Cheng (2025),ACW (Guo),Practical and Effective Code Watermarking for Large Language Models,Conference paper
+Guo et al. (2026),CodeTracer,Adaptive Code Watermarking Through Reinforcement Learning,Conference paper
+He et al. (2025),DTW,A Code Generation Watermarking Method Based on Double Threshold,Conference paper
+Javidnia et al. (2026),SWaRL,SWaRL: Safeguard Code Watermarking via Reinforcement Learning,Preprint
+Kim et al. (2026),STONE,Marking Code Without Breaking It: Code Watermarking for Detecting LLM-Generated Code,Conference paper
+Lee et al. (2024),SWEET,Who Wrote this Code? Watermarking for Code Generation,Conference paper
+Li et al. (2026a),ACW (Li),Efficient and Universal Watermarking for LLM-Generated Code Detection,Journal article
+Li et al. (2025b),CodeMark,CodeMark: Contextual and Natural Watermarking for Tracing Code Snippet Provenance,Journal article
+Li et al. (2026b),ASLang,ASLang: Compiler-Driven Watermark Injection and Detection for Traceable AI Content Generation,Journal article
+Lin et al. (2026),Code Acrostic,CODE ACROSTIC: Robust Watermarking for Code Generation,Conference paper
+Lin et al. (2025),DWC,Decomposition then Watermarking: Enhancing Code Traceability with Dual-Channel Code Watermarking,Journal article
+Nie et al. (2026),MATRIX,MATRIX: Multi-Layer Code Watermarking via Dual-Channel Constrained Parity-Check Encoding,Preprint
+Ning et al. (2025),MCGMark,MCGMark: An Encodable and Robust Online Watermark for Tracing LLM-Generated Malicious Code,Preprint
+Shi et al. (2026),EAW,Entropy-Aware Watermarking for Code Generation Models,Conference paper
+Xu et al. (2025a),CLASP,CLASP: Training-Free LLM-Assisted Source Code Watermarking via Semantic-Preserving Transformations,Preprint
+Yang et al. (2024a),SrcMarker,SrcMarker: Dual-Channel Source Code Watermarking via Scalable Code Transformations,Conference paper
+Yu et al. (2026),GDW,Toward Stronger Code Watermarking: A Grammar-Driven Approach to Optimizing the Trade-off Between Quality and Detectability,Preprint
+Zhang et al. (2026),RoSeMary,Robust Zero Knowledge Verifiable Watermarking of Code LLMs with ML/Crypto Co-Design,Journal article

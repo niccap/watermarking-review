@@ -1,0 +1,8 @@
+dimension,coverage,reported_measures
+Detectability (presence detection),17/21,AUROC/ΔAUROC (11); TPR with false-positive control (11); accuracy (1); negative-set FPR checks with exact-identifier recovery (1); precision or F1-score (2); project verification success (2); quality-detectability AUTC (1)
+Detectability (message recovery),8/21,Message or top-1 accuracy (7); bitwise accuracy (4)
+Functional preservation,21/21,Pass@k (10); Pass% or execution correctness (7); Δpass rate (1); CodeBLEU (6); syntax or compilation pass rate (6)
+Imperceptibility,8/21,"Perplexity shift; mean reciprocal rank; CodeBERTScore; CodeBLEU; human naturalness rating; variable similarity; human detection success; anchor-state JSD, mutual information, and Hamming similarity"
+Robustness,20/21,Post-attack AUROC/ΔAUROC; quality-detectability AUTC; TPR with false-positive control; message and bitwise accuracy; accuracy; F1-score; Pass@k; Pass%; CodeBLEU; variable similarity
+Efficiency,14/21,"Insertion, compilation, or generation delay (13); detection time (8); memory overhead (3); additional model parameters (1); generation iterations and token cost (1); estimated economic cost (1)"
+Capacity,9/21,Nominal payload (9); embedding success (2); recovery across payload lengths (5); codeword/capacity stratification at fixed payload (1)

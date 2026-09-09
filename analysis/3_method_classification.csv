@@ -1,0 +1,22 @@
+method,embedding_mechanism,key_design_principle,embedding_stage,payload_type
+SWEET,Token biasing,Entropy-gated biasing,Generation-time,Single-bit
+CodeIP,Token biasing,Grammar-guided payload partitioning,Generation-time,Multi-bit
+ACW (Guo),Token biasing,Structure-aware partitioning,Generation-time,Single-bit
+DTW,Token biasing,Multi-threshold entropy gating,Generation-time,Single-bit
+EAW,Token biasing,Entropy-adaptive biasing,Generation-time,Single-bit
+STONE,Token biasing,Syntax-aware token filtering,Generation-time,Single-bit
+MCGMark,Token biasing,Robust bit-wise biasing,Generation-time,Multi-bit
+Code Acrostic,Token biasing,Corpus-derived entropy cues,Generation-time,Single-bit
+CodeTracer,Token biasing,Learned embedding selection,Generation-time,Single-bit
+GDW,Token biasing,Grammar- and role-aware biasing,Generation-time,Single-bit
+ASLang,Token biasing,Compiler-bound keyed biasing,Generation-time,Single-bit
+CodeMark,Code transformation,Contextual variable renaming,Post-generation,Multi-bit
+ACW (Li),Code transformation,Idempotent rule-based transformations,Post-generation,Single-bit
+SrcMarker,Code transformation,Learned dual-channel transformations,Post-generation,Multi-bit
+DWC,Code transformation,Redundant learned channels,Post-generation,Multi-bit
+MATRIX,Code transformation,Parity-constrained dual channels,Post-generation,Multi-bit
+MCSS,Code transformation,Keyed spread-spectrum channels,Post-generation,Multi-bit
+RoSeMary,Code transformation,Robust learned transformations,Post-generation,Multi-bit
+CLASP,Code transformation,LLM-assisted reference comparison,Post-generation,Multi-bit
+SWaRL,End-to-end learned,Joint generator-detector learning,Training-time,Single-bit
+PromptMark,Prompt-based steering,Prompt-steered identifier initials,Generation-time,Single-bit

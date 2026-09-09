@@ -1,0 +1,23 @@
+category,resource,language_coverage,description,code,tests,count,unit,use_in_reviewed_methods
+Function-level benchmark families,HumanEval,Python,yes,yes,yes,164,tasks,Evaluation: SWEET; DTW; ACW (Guo); Code Acrostic; RoSeMary; SWaRL; PromptMark; GDW; MATRIX. Evaluation and training: CodeTracer. Auxiliary: PromptMark
+Function-level benchmark families,MBPP,Python,yes,yes,yes,974,tasks,Evaluation: SWEET; DTW; ACW (Li); ACW (Guo); SWaRL; PromptMark; MATRIX. Evaluation and training: CodeTracer. Auxiliary: PromptMark
+Function-level benchmark families,HumanEval+,Python,yes,yes,yes,164,tasks,Evaluation: STONE; ACW (Li); EAW; SWaRL. Baseline only: MCSS
+Function-level benchmark families,MBPP+,Python,yes,yes,yes,378,tasks,Evaluation: STONE; EAW; SWaRL; GDW
+Function-level benchmark families,EvalPlus,Python,yes,yes,yes,542,tasks,Evaluation: RoSeMary
+Function-level benchmark families,MBXP,13 languages,yes,yes,yes,12662,variants,"Evaluation: SrcMarker (C++, Java, JavaScript); DWC (Python, C++, Java); RoSeMary (Python, C++, Java); CLASP (Python, C++, Java, JavaScript)"
+Function-level benchmark families,HumanEvalPack,6 languages,yes,yes,yes,984,variants,"Evaluation: SWEET (C++, Java); ACW (Guo) (Java, C++, JavaScript); STONE (C++, Java); EAW (Java, C++); CodeTracer (Java, C++); GDW (Java, Go)"
+Extended-scope generation and project benchmarks,DS-1000,Python,yes,yes,yes,1000,tasks,Evaluation: SWEET; DTW
+Extended-scope generation and project benchmarks,ClassEval,Python,yes,yes,yes,100,classes,Evaluation: SWEET
+Extended-scope generation and project benchmarks,APPS,Python,yes,yes,yes,10000,tasks,"Evaluation: ACW (Li) (3,035 tasks); MATRIX"
+Extended-scope generation and project benchmarks,SRDD,Python,yes,no,no,1200,tasks,Evaluation: ACW (Li) (500 tasks)
+Extended-scope generation and project benchmarks,Tests4Py,Python,yes,yes,yes,507,commit versions,Evaluation: ACW (Li)
+Existing-code corpora,CodeSearchNet,6 languages,yes,yes,no,~6.4M,functions,"Evaluation: CodeIP (Python, Java, JavaScript, Go, PHP); SrcMarker (Java, JavaScript); ACW (Li) (Python human-code negatives); CLASP (Java, JavaScript). Evaluation and training: CodeMark (Java, JavaScript, Python); DWC (Java, Python). Training: RoSeMary"
+Existing-code corpora,Project CodeNet,55 languages,yes,yes,yes,>14M,programs,"Evaluation: MCSS (Python; 1,250 human files and 500 generated solutions). Baseline training: SrcMarker-Py (20,000 files)"
+Existing-code corpora,The Stack,358 languages,no,yes,no,~3 TB,source code,"Evaluation and training: CodeMark (C++; 182,883 functions)"
+Existing-code corpora,GitHub-C,C,no,yes,no,2072,files,Evaluation: SrcMarker; DWC; CLASP
+Existing-code corpora,GitHub-Java,Java,no,yes,no,3022,files,Evaluation: SrcMarker
+Specialized and auxiliary resources,MCGTest,Python-like signatures,yes,no,no,406,prompts,Evaluation: MCGMark
+Specialized and auxiliary resources,ASLang code-prompt set,Not reported,yes,no,yes,NR,prompts,Evaluation: ASLang
+Specialized and auxiliary resources,OpenCoder SFT Stage 2,Python,yes,yes,yes,118278,samples,"Training: SWaRL (30,000 samples)"
+Specialized and auxiliary resources,open-r1 verifiable coding problems,Python,yes,yes,yes,NR,problems,Training: CodeTracer
+Specialized and auxiliary resources,CoCoNuT,4 languages,no,yes,no,~24.5M,edits,Auxiliary: Code Acrostic

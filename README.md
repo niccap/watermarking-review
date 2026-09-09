@@ -128,7 +128,7 @@ The `data_extraction/` directory contains the canonical study index and structur
 - [`1_primary_studies.csv`](data_extraction/1_primary_studies.csv): stable study identifiers (`PS01`–`PS21`) and definitive bibliographic information.
 - [`2_primary_studies_audit.csv`](data_extraction/2_primary_studies_audit.csv): evidence-backed study-level judgments across five methodological and reporting criteria, plus an overall decision.
 - [`3_methods.csv`](data_extraction/3_methods.csv): one row per method (`M01`–`M21`), covering embedding, payload and signal design, verification, access assumptions, and key requirements.
-- [`4_resources.csv`](data_extraction/4_resources.csv): datasets and benchmarks (`R01`–`R21`), including language coverage, available artifacts, scale, and type.
+- [`4_resources.csv`](data_extraction/4_resources.csv): datasets and benchmarks (`R01`–`R22`), including language coverage, available artifacts, scale, and type.
 - [`5_resource_usage.csv`](data_extraction/5_resource_usage.csv): many-to-many links between resources and methods, with use roles, languages, splits, and notes.
 - [`6_quality_evaluation.csv`](data_extraction/6_quality_evaluation.csv): method-level evaluation evidence for detectability, functional preservation, robustness, imperceptibility, efficiency, and capacity.
 - [`7_robustness_protocols.csv`](data_extraction/7_robustness_protocols.csv): deduplicated catalog of attack and robustness protocols (`RP01`–`RP15`).

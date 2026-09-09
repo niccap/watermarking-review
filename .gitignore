@@ -1,5 +1,64 @@
+# Local and private research material
+/local/
+
+# Local configuration and secrets
 .env
+.env.*
+!.env.example
+
+# Python virtual environments
 .venv/
-results/
-local/
+venv/
+env/
+
+# Python caches and compiled files
 __pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+
+# Coverage, packaging, and build artifacts
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Generated local output
+/results/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# Operating-system metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# Temporary Microsoft Office files
+~$*
